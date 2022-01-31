@@ -1,25 +1,24 @@
 from django.db import models
-import datetime
 
 # Create your models here.
-
-class details(models.Model):
-    Fname = models.CharField(max_length=50)
-    Lname = models.CharField(max_length=50)
-    Email = models.CharField(max_length=100)
-    Number = models.CharField(max_length=40)
-    Dname = models.CharField(max_length=100)
-    Branch = models.CharField(max_length=40)
-    Dscore = models.CharField(max_length=40 , null= True)
-    Styear = models.CharField(max_length=20 , null=True)
-    Dyear = models.CharField(max_length=20)
-    Hsc = models.CharField(max_length=50)
-    Hscore = models.CharField(max_length=40 , null= True)
-    Hyear = models.CharField(max_length=20)
-    Ssc = models.CharField(max_length=50)
-    Sscore = models.CharField(max_length=40)
-    Syear = models.CharField(max_length=20)
-    Experience = models.CharField(max_length=500)
-    Skills = models.CharField(max_length=500)
-    Awards = models.CharField(max_length=500)
-    
+class modelaccept(models.Model):
+    fname = models.CharField(max_length=50, null=True)
+    lname = models.CharField(max_length=50, null=True)
+    specification = models.CharField(max_length=50, null=True)
+    email = models.CharField(max_length=100, null=True)
+    number = models.CharField(max_length=40, null=True)
+    link = models.CharField(max_length=100 , null=True)
+    dname = models.CharField(max_length=100, null=True)
+    branch = models.CharField(max_length=40 , null=True)
+    dscore = models.CharField(max_length=40 , null= True)
+    styear = models.CharField(max_length=20 , null=True)
+    dyear = models.CharField(max_length=20, null=True)
+    hsc = models.CharField(max_length=50, null=True)
+    hscore = models.CharField(max_length=40 , null= True)
+    hyear = models.CharField(max_length=20, null=True)
+    ssc = models.CharField(max_length=50, null=True)
+    sscore = models.CharField(max_length=40, null=True)
+    syear = models.CharField(max_length=20, null=True)
+    experience = models.TextField(max_length=500, null=True)
+    skills = models.TextField(max_length=500, null=True)
+    awards = models.TextField(max_length=500, null = True)

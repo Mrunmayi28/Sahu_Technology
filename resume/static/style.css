@@ -1,0 +1,30 @@
+.head-tag{
+   background-color: bisque; 
+   border-bottom: black;
+}
+.tags{
+   float: right;
+   margin-right: 16em;
+}
+.header-part{
+    position: absolute;
+    display: inline-block;
+    
+}
+
+.exp{
+    display: inline-block;
+    position: absolute;
+    margin-top: 20em;
+    
+    width: 30em;
+}
+.skills{
+   
+    position: absolute;
+    margin-top: 20em;
+    margin-left: 50em;
+   display: inline-block;
+    width: 30em;
+
+}

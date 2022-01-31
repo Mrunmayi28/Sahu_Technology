@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container" style="font-family: 'Lobster', cursive;">
+  <div style="position:relative;
+  padding-bottom: -9px;padding-top: -9px;
+  font-family:Arial, Helvetica, sans-serif;
+            font-weight: 470;
+        color:rgb(255, 136, 0); font-size:32px;"> 
+    {{user.fname}} {{ user.lname }}<br>
+    <span style=" font-size:20px;color:rgb(92, 61, 46);">{{user.specification }}</span>
+    </div>
+    <div class="tags "
+    style=" position:absolute;
+    font-size: 12px;
+    padding-top: -70px;
+    padding-bottom: -9px;
+    margin-top: -200px;
+    margin-bottom: -200px;
+    margin-left: 530px;">
+      <p>{{user.email}}<br>{{user.link}}<br> {{user.number}}</p>
+    <hr>
+    
+  </div><!--head-tag-->
+
+<div class="header-part float-end"
+style="position: absolute;
+display: inline-block;
+font-size: 12px;">
+   <h3 style="padding-bottom: -9px; ">EDUCATION</h3>
+   <div>
+     <h6 style="font-size: 12px;">{{user.dname}}</h6>
+     <p>BE-({{user.branch}})<br>{{user.styear}}-{{user.dyear}}<br>Score: {{user.dscore}}</p>
+
+   </div>
+  
+   <div>
+       <h6 style="margin-bottom: 0px;font-size: 14px;">{{user.hsc}}</h6>
+            HSC-{{user.hyear}}<br>
+            Score-{{user.hscore}}
+        
+       <h6 style="margin-bottom: 0px;font-size: 14px;">{{user.ssc}}</h6>
+            SSC-{{user.syear}}<br>
+            Score-{{user.sscore}}
+        
+
+  </div>
+</div><!--headerpart-->
+ <!--tags-->
+   <div class="exp"
+   style="display: inline-block;
+   font-size: 14px;
+   position: absolute;
+   margin-top: 20em;
+   
+   width: 30em;">
+   <h4 style="font-size: 14px;">Experience</h4>
+   <p style="font-size: 14px;">{{user.experience}}</p>
+    </div><!--exp-->
+
+       <div class="skills"
+       style="position: absolute;
+       margin-top: 20em;
+       margin-left: 50em;
+      display: inline-block;
+       width: 30em;">
+       <h4 style="font-size: 14px;">Skills</h4>
+       <div style="font-size: 14px;">{{user.skills}}</div>
+        
+           <h4 style="font-size: 14px;">Awards</h4>
+           <div style="font-size: 14px;">{{user.awards}}</div>
+            </div><!--skills-->
+            </div><!--container-->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

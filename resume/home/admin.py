@@ -1,9 +1,7 @@
+
 from django.contrib import admin
-from .models import details
+from home.models import modelaccept
 
 # Register your models here.
 
-@admin.register(details)
-class Admindetails(admin.ModelAdmin):
-    list_display = ('Fname','Lname','Email','Number','Dname','Branch','Dscore','Styear','Dyear','Hsc','Hscore',
-                    'Hyear','Ssc','Sscore','Syear','Experience','Skills','Awards')
+admin.site.register(modelaccept)
